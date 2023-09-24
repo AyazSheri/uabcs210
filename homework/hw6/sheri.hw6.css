@@ -1,0 +1,73 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* flex container */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+/* grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px; /* 3x3 grid cells */
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px; /* gutter */
+}
+/* grid cells */
+.grid-item {
+  background-color: #ccc;
+  display: flex;
+}
+/* inner flexbox for grid cells */
+.inner-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+/* different background and font colors for grid cells */
+.item1 {
+  background-color: #f44336;
+  color: #fff;
+} /* red */
+.item2 {
+  background-color: #4caf50;
+  color: #fff;
+} /* green */
+.item3 {
+  background-color: #2196f3;
+  color: #fff;
+} /* blue */
+.item4 {
+  background-color: #ff9800;
+  color: #000;
+} /* orange */
+.item5 {
+  background-color: #9c27b0;
+  color: #fff;
+} /* purple */
+.item6 {
+  background-color: #03a9f4;
+  color: #000;
+} /* light blue */
+.item7 {
+  background-color: #8bc34a;
+  color: #000;
+} /* light green */
+.item8 {
+  background-color: #ffeb3b;
+  color: #000;
+} /* yellow */
+.item9 {
+  background-color: #9e9e9e;
+  color: #fff;
+  grid-column: 1 / 4;
+} /* grey, spans an entire track */
