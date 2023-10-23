@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheri's Grade System</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <script>
+      function getGradeAndReward() {
+        let numericGrade = prompt("Enter the student's numeric grade:");
+        let letterGrade;
+        let reward;
+
+        if (numericGrade >= 90 && numericGrade <= 100) {
+          letterGrade = 'A';
+        } else if (numericGrade >= 80 && numericGrade < 90) {
+          letterGrade = 'B';
+        } else if (numericGrade >= 70 && numericGrade < 80) {
+          letterGrade = 'C';
+        } else if (numericGrade >= 60 && numericGrade < 70) {
+          letterGrade = 'D';
+        } else {
+          letterGrade = 'F';
+        }
+
+        switch (letterGrade) {
+          case 'A':
+            reward = 'Candy';
+            break;
+          case 'B':
+            reward = 'Apple';
+            break;
+          case 'C':
+            reward = 'Mint';
+            break;
+          case 'D':
+            reward = 'Pencil';
+            break;
+          case 'F':
+            reward = 'Awkward conversation with parents';
+            break;
+        }
+
+        // Log results to the console
+        console.log(`Grade: ${numericGrade}`);
+        console.log(`Letter Grade: ${letterGrade}`);
+        console.log(`Reward: ${reward}`);
+      }
+    </script>
+  </head>
+  <body onload="getGradeAndReward()"></body>
+</html>
