@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Manager</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div id="searchArea">
+      <input
+        type="text"
+        id="searchField"
+        placeholder="Search books by title or author"
+      />
+      <button id="searchButton">Search</button>
+    </div>
+    <ul id="booksList"></ul>
+    <div id="bookDetails" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="detailsContent"></div>
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
